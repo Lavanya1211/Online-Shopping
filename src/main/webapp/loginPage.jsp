@@ -83,10 +83,12 @@
        </div>
         <div class="text-inner-container">
       	<label class="os-m">Email</label><br/>
-           <input type="email" class="os-m text-box-design" style="width:200px;" name="email" placeholder="Enter your email"required><br/>
+           <input type="email" onblur="emailCheck()" class="os-m text-box-design" style="width:200px;" name="email" placeholder="Enter your email"required><br/>
+           <label id="emailError" style="font-size:10px; color:red;"></label><br/>
            
            <label class="os-m">Password</label><br/>
-           <input type="password" class="os-m text-box-design" style="width:200px;" name="password" placeholder="Enter Password" required><br/>
+           <input type="password" onblur="passwordCheck()" class="os-m text-box-design" style="width:200px;" name="password" placeholder="Enter Password" required><br/>
+       		<label id="passwordError" style="font-size:10px; color:red;"></label><br/>
        </div>
        
         <div class="submit-container">
