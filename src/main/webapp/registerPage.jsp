@@ -144,7 +144,7 @@
 		var regex= /^[a-zA-Z ]*$/;
 		const found = name.match(regex);
 		
-		if(found==null){
+		if(found==null || name.trim() == "" || name.trim()==null){
 			document.getElementById("nameError").style.display="inline";
 			document.getElementById("nameError").innerHTML="invalid name i.e..only alphabets allowed!";
 		}

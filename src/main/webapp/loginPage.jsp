@@ -83,7 +83,7 @@
        </div>
         <div class="text-inner-container">
       	<label class="os-m">Email</label><br/>
-           <input type="email" onblur="emailCheck()" class="os-m text-box-design" style="width:200px;" name="email" placeholder="Enter your email"required><br/>
+           <input type="email" onblur="emailCheck()" id="email" class="os-m text-box-design" style="width:200px;" name="email" placeholder="Enter your email"required><br/>
            <label id="emailError" style="font-size:10px; color:red;"></label><br/>
            
            <label class="os-m">Password</label><br/>
@@ -105,4 +105,19 @@
   </div>
 </div>
 </body>
+<script>
+function emailCheck(){
+	var email = document.getElementById("email").value;
+	var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	const found = email.match(regex);
+	
+	if(found==null){
+		document.getElementById("emailError").style.display="inline";
+		document.getElementById("emailError").innerHTML="Invalid email address";
+	}
+	else{
+		document.getElementById("emailError").style.display="none";
+	}
+}
+</script>
 </html>
