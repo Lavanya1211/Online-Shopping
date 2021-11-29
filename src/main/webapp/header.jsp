@@ -7,10 +7,9 @@
 <meta charset="ISO-8859-1">
 <title>Online Shopping</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
-
 *{
 	margin: 0;
 	padding: 0;
@@ -20,13 +19,11 @@
 }
 .picture{
 	cursor: pointer;
-	width: 100%;
-	
+	width: 100%;	
 }
 a{
 	text-decoration: none;
 }
-
 .nav-elements{
 	margin: 0 20px 0 20px;
 	padding: 5px;
@@ -34,21 +31,19 @@ a{
  .left-nav{
 	display:flex;	
 }
-
 .right-nav{
 	display:flex;	
 	margin-left: auto;
-
 }
 .nav-area {
 	padding: 10px;
 	position:sticky;
 	top: 0;
 	display:flex;
-	background-color:lightblue;
-	
+	background-color:lightblue;	
 }
 </style>
+
 </head>
 <div id="navbar"></div>
 <body>
