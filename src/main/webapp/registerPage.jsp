@@ -7,7 +7,9 @@
 <meta charset="ISO-8859-1">
 <title>Registration Page</title>
 <style>
-
+body {
+  background-image: url('https://studentprojectguide.com/wp-content/uploads/2017/11/Online-Shopping-System.jpeg');
+}
 .container{
     margin:5px;
       padding:5px;
@@ -19,7 +21,7 @@
 }
 .login-container{
    height:100%;
-   width:400px;
+   width:450px;
    padding:5px;
    border-radius: 10px;
     display:flex;
@@ -174,13 +176,15 @@
 	}
 	function checkNumber(){
 		var number = document.getElementById("number").value;
-		var length = number.toString().length;
-		if(length==10){
-			documet.getElementById("numberError").style.display="none";
+		var regex = /^\d{10}$/;
+		const found = number.match(regex);
+
+		if(found==null){
+			document.getElementById("numberError").style.display="inline";
+			document.getElementById("numberError").innerHTML="Please Provide a valid number";
 		}
 		else{
-			document.getElementById("emailError").style.display="inline";
-			document.getElementById("numberError").innerHTML ="Please Enter a valid number";
+			document.getElementById("numberError").style.display="none";
 		}
 	}
 	function passwordValidation(){

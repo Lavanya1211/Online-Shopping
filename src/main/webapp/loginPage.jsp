@@ -8,7 +8,9 @@
 <title>Login</title>
 
 <style>
-
+body {
+  background-image: url('https://studentprojectguide.com/wp-content/uploads/2017/11/Online-Shopping-System.jpeg');
+}
 .container{
     margin:5px;
       padding:5px;
@@ -19,7 +21,7 @@
       margin-top:50px;
 }
 .login-container{
-   height:400px;
+   height:450px;
    width:400px;
    padding:5px;
    border-radius: 10px;
